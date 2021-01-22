@@ -26,7 +26,7 @@ def fun(n,w,wt,val):
             if(j>=wt[i-1]):
                 dp[i][j] = max(dp[i][j], dp[i - 1][j - wt[i-1]] + val[i-1])
     return dp[-1][-1]
-print fun(3,4,[2,1,3],[4,2,3])
+print( fun(3,4,[2,1,3],[4,2,3]))
 ````
 ### 300 最长递增子序列
 分类：_动态规划_   
@@ -98,7 +98,7 @@ def coinChange(coins,amount):
         return -1
     else:
         return dp[-1][-1]
-print coinChange([2,5,1],11)
+print( coinChange([2,5,1],11))
 ```
 ###76 最小覆盖子串
 给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
@@ -136,7 +136,7 @@ def fun(s,t):
     if(min(temp[1])==0):
         return ""#一次符合的也没有
     return res
-print fun("ADOBECODEBANC", "ABC")
+print( fun("ADOBECODEBANC", "ABC"))
 
 
 #滑动窗口
@@ -172,7 +172,7 @@ def fun(s,t):
         return ""
     return s[start:res+start]
 # print fun("ab", "a")
-print fun("ADOBECODEBANC",  "ABC")
+print( fun("ADOBECODEBANC",  "ABC"))
 # # print fun("aab", "aab")
 ```
 
@@ -241,5 +241,24 @@ def fun(s,p):
                         voild-=1
                     windows[d]-=1
     return res
-print fun("cbaebabacd" ,"abc")
+print( fun("cbaebabacd" ,"abc"))
 ```
+###198 [打家劫舍](https://leetcode-cn.com/problems/house-robber)
+####你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
+####给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。
+20/1/22
+```python
+def rob( nums):
+    if not nums:
+        return 0
+    if len(nums)==1:
+        return nums[0]
+    dp=[[] for i in range(len(nums)+1)]
+    dp[0]=0
+    dp[1]=nums[0]
+    for i in range(2,len(nums)+1):
+        dp[i]=max(dp[i-1],dp[i-2]+nums[i-1])
+    return dp[-1]
+print(rob([1,2,3,1]))
+```
+

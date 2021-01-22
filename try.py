@@ -5,7 +5,7 @@
 
 str1 = [8,2,10]
 # str2 = sorted(str1)
-print map(max,str1)
+print (map(max,str1))
 
 # str1="SDF"
 # if 'F' in str1:

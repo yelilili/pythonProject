@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d680eca-455d-41fe-aa7f-4fe4bc093386" name="Default Changelist" comment="" />
+    <list default="true" id="0d680eca-455d-41fe-aa7f-4fe4bc093386" name="Default Changelist" comment="">
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/misc.xml" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/pythonProject.iml" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/main.py" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/main.py" afterDir="false" />
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/mind.md" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/mind.md" afterDir="false" />
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/try.py" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/try.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -23,6 +33,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1mdoeyyRpqykXtFxXXCpjmWT2OU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -129,8 +140,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/main.py</url>
-          <line>732</line>
-          <option name="timeStamp" value="79" />
+          <line>755</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

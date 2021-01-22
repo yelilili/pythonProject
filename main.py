@@ -724,27 +724,42 @@ from collections import Counter
 #         if len(finanal)==k:
 #             return finanal
 #     return finanal
-def topKFrequent(nums, k) :
-    nlist = dict(Counter(nums[:]))
-    resN = []
-    finanal = []
-    for i in nlist:
-        resN.append(nlist[i])
-    for i in nlist:
-        max1=max(resN)
-        j=0
-        for l in nlist:
-            if resN[j] == max1:
-                resN[j] = 0
-                finanal.append(l)
-                # j += 1
-            if len(finanal) == k:
-                return finanal
-            j+=1
-    return finanal
-print topKFrequent([3,2,3,1,2,4,5,5,6,7,7,8,2,3,1,1,1,10,11,5,6,2,4,7,8,5,6],10)
+# def topKFrequent(nums, k) :
+#     nlist = dict(Counter(nums[:]))
+#     resN = []
+#     finanal = []
+#     for i in nlist:
+#         resN.append(nlist[i])
+#     for i in nlist:
+#         max1=max(resN)
+#         j=0
+#         for l in nlist:
+#             if resN[j] == max1:
+#                 resN[j] = 0
+#                 finanal.append(l)
+#                 # j += 1
+#             if len(finanal) == k:
+#                 return finanal
+#             j+=1
+#     return finanal
+# print (topKFrequent([3,2,3,1,2,4,5,5,6,7,7,8,2,3,1,1,1,10,11,5,6,2,4,7,8,5,6],10))
 
 
+
+#198打家劫舍
+
+def rob( nums):
+    if not nums:
+        return 0
+    if len(nums)==1:
+        return nums[0]
+    dp=[[] for i in range(len(nums)+1)]
+    dp[0]=0
+    dp[1]=nums[0]
+    for i in range(2,len(nums)+1):
+        dp[i]=max(dp[i-1],dp[i-2]+nums[i-1])
+    return dp[-1]
+print(rob([1,2,3,1]))
 
 
 
