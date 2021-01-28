@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d680eca-455d-41fe-aa7f-4fe4bc093386" name="Default Changelist" comment="">
-      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/misc.xml" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/pythonProject.iml" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/pythonProject.iml" afterDir="false" />
+    <list default="true" id="0d680eca-455d-41fe-aa7f-4fe4bc093386" name="Default Changelist" comment="1.22 198打家劫舍">
+      <change afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/Hot100.py" afterDir="false" />
+      <change afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/ListNode.py" afterDir="false" />
+      <change afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/Tree.py" afterDir="false" />
       <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/main.py" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/main.py" afterDir="false" />
       <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/mind.md" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/mind.md" afterDir="false" />
-      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/try.py" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/try.py" afterDir="false" />
+      <change beforePath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/train.py" beforeDir="false" afterPath="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -41,9 +47,30 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="Tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/Tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tree" />
         <item itemvalue="Python.try" />
         <item itemvalue="Python.train" />
       </list>
@@ -123,7 +151,41 @@
       <option name="presentableId" value="Default" />
       <updated>1609832928509</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.22 198打家劫舍">
+      <created>1611317988984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611317988984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.22 198打家劫舍" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.22 198打家劫舍" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -140,8 +202,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$APPLICATION_HOME_DIR$/jbr/bin/SOFTWARE/PycharmProjects/pythonProject/main.py</url>
-          <line>755</line>
-          <option name="timeStamp" value="80" />
+          <line>895</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

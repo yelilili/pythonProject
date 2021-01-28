@@ -748,18 +748,202 @@ from collections import Counter
 
 #198打家劫舍
 
-def rob( nums):
-    if not nums:
-        return 0
-    if len(nums)==1:
-        return nums[0]
-    dp=[[] for i in range(len(nums)+1)]
-    dp[0]=0
-    dp[1]=nums[0]
-    for i in range(2,len(nums)+1):
-        dp[i]=max(dp[i-1],dp[i-2]+nums[i-1])
-    return dp[-1]
-print(rob([1,2,3,1]))
+# def rob( nums):
+#     if not nums:
+#         return 0
+#     dp=[[] for i in range(len(nums)+1)]
+#     dp[0]=0
+#     dp[1]=nums[0]
+#     for i in range(2,len(nums)+1):
+#         dp[i]=max(dp[i-1],dp[i-2]+nums[i-1])
+#     return dp[-1]
+# print(rob([1,2,3,1]))
+
+
+# 达达：72 编辑距离
+# def minDistance( word1, word2) :
+#     dp=[[[] for i in range(len(word1)+1)] for _ in range(len(word2)+1)]
+#
+#     for i in range(len(word1)+1):
+#         dp[0][i]=i
+#     for i in range(len(word2)+1):
+#         dp[i][0]=i
+#
+#     for i in range(1,len(word2)+1):
+#         for j in range(1,len(word1)+1):
+#             dp[i][j]=dp[i-1][j-1]
+#             if word1[j-1]!=word2[i-1]:
+#                 dp[i][j]=min(dp[i-1][j]+1,dp[i][j]+1,dp[i][j-1]+1)
+#     return dp[-1][-1]
+#
+# print(minDistance("b",  ""))
+
+
+#337 打家劫舍III
+# def rob(nums):
+#     dp=[[]*len(nums)]
+#     ceng=1
+#     for i in range(len(nums)):
+#         for j in range
+#
+#     print(dp)
+# print(rob([]))
+
+#
+# def rob(root):
+#     def _rob(root):
+#         if not root: return 0, 0  # 偷，不偷
+#
+#         left = _rob(root.left)
+#         right = _rob(root.right)
+#         # 偷当前节点, 则左右子树都不能偷
+#         v1 = root.val + left[1] + right[1]
+#         # 不偷当前节点, 则取左右子树中最大的值
+#         v2 = max(left) + max(right)
+#         return v1, v2
+#
+#     return max(_rob(root))
+# print(rob([3,2,3,None,3,None,1]))
+
+#287 寻找重复数
+# def findDuplicate( nums):
+#     for i in range(1, len(nums)):
+#         for j in range(i - 1, -1, -1):
+#             if nums[j] == nums[i]:
+#                 return nums[i]
+# print(findDuplicate([3,1,3,4,2]))
+
+
+# def findDuplicate( nums):
+#     size = len(nums)
+#     left = 1
+#     right = size - 1
+#     while left < right:
+#         mid = left + (right - left) // 2
+#         cnt = 0
+#         for num in nums:
+#             if num <= mid:
+#                 cnt += 1
+#         if cnt > mid:  # 根据抽屉原理，小于等于 4 的数的个数如果严格大于 4 个
+#                         # 此时重复元素一定出现在 [1, 4] 区间里
+#             right = mid # 重复的元素一定出现在 [left, mid] 区间里
+#         else:
+#             left = mid + 1 # [mid + 1, right]
+#     return left
+# print(findDuplicate([3,1,3,4,2]))
+
+
+#48旋转图像
+# def rotate( matrix) :
+#     pos1, pos2 = 0, (len(matrix[0]) - 1)
+#     while pos1 < pos2:
+#         add = 0
+#         while add < pos2 - pos1:
+#             temp = matrix[pos1][pos1 + add]
+#             matrix[pos1][pos1 + add] = matrix[pos2 - add][pos1]
+#             matrix[pos2 - add][pos1] = matrix[pos2][pos2 - add]
+#             matrix[pos2][pos2 - add] = matrix[pos1 + add][pos2]
+#             matrix[pos1 + add][pos2] = temp
+#             add += 1
+#         pos1+=1
+#         pos2-=1
+
+
+#75颜色分类
+# def sortColors(nums) :
+
+#     p0 = cur = 0;p2 = len(nums) - 1
+#     while cur <= p2:
+#         # 当nums[cur]=2时
+#         while cur <= p2 and nums[cur] == 2:
+#             nums[cur], nums[p2] = nums[p2], nums[cur]
+#             p2 -= 1
+#         # 当nums[cur]=0时
+#         if nums[cur] == 0:
+#             nums[cur], nums[p0] = nums[p0], nums[cur]
+#             p0 += 1
+#         cur += 1
+#     return nums
+# # print(sortColors([2,0,2,1,1,0]))
+# print(sortColors([1,1,2,2,2,1,0,0]))
+
+#打家劫舍III
+# import Tree
+# def rob(root) -> int:
+#     def _rob(root):
+#         if not root: return 0, 0  # 偷，不偷
+#         left = _rob(root.left)
+#         right = _rob(root.right)
+#         # 偷当前节点, 则左右子树都不能偷
+#         v1 = root.val + left[1] + right[1]#记录偷该节点的钱数
+#         # 不偷当前节点, 则取左右子树中最大的值
+#         v2 = max(left) + max(right)#记录不偷当前节点的钱数，那下一层一定偷
+#                                     # 将左孩子的最大偷钱数加上右孩子的最大偷钱数
+#         return v1, v2
+#
+#     return max(_rob(root))
+# tree=Tree.TreeNodeTools()
+# root=tree.createTreeByrow([3,4,5,1,3,'null',1],0)
+# print(rob(root))
+
+#102 二叉树的层序遍历
+# import Tree
+# def levelOrder( root) :
+#     if not root:return []
+#     queue=[]
+#     queue.append(root)
+#     res=[]
+#     while len(queue)>0:
+#         temp=[]#记录每一层的节点
+#         for i in range(len(queue)):
+#             node=queue.pop(0)
+#             temp.append(node.val)
+#             if node.left:
+#                 queue.append(node.left)
+#             if node.right:
+#                 queue.append(node.right)
+#         res.append(temp[:])#将每一层加入结果中
+#     return res
+# tree=Tree.TreeNodeTools()
+# root=tree.createTreeByrow([3,9,20,3,'null',15,7],0)
+# print(levelOrder(root))
+
+
+#反转链表
+def reverseList(head) :
+    if not head:
+        return None
+    pre, cur = head, head.next
+    pre.next = None
+    while cur:
+        temp = cur.next
+        cur.next = pre
+        pre, cur = cur, temp
+    return pre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
