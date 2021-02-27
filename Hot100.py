@@ -1,4 +1,4 @@
-#55跳跃游戏
+#No.1  55跳跃游戏
 class Solution:
     def canJump(self, nums) -> bool:
         dp=[[] for i in range(len(nums)+1)]
@@ -8,7 +8,7 @@ class Solution:
             if dp[i]==0:
                 return False
         return True
-#75颜色分类
+#No.2  75颜色分类
 class Solution:
     def sortColors(self, nums) -> None:
         p1 = 0
@@ -22,7 +22,7 @@ class Solution:
                 nums[p1],nums[cur]=nums[cur],nums[p1]
                 p1+=1
             cur+=1
-#48旋转图像
+#No.3  48旋转图像
 class Solution:
     def rotate(self, matrix) -> None:#matrix:: List[List[int]]
         pos1,pos2=0,(len(matrix[0])-1)
@@ -38,7 +38,7 @@ class Solution:
             pos1+=1
             pos2-=1
 
-#打家劫舍
+#No.4  打家劫舍
 class Solution(object):
     def rob(self, nums):
         if not nums:
@@ -52,7 +52,7 @@ class Solution(object):
             dp[i] = max(dp[i - 1], dp[i - 2] + nums[i - 1])
         return dp[-1]
 
-#102 二叉树的层序遍历
+#No.5  102 二叉树的层序遍历
 import Tree
 def levelOrder( root) :
     if not root:return []
@@ -73,6 +73,37 @@ def levelOrder( root) :
 tree=Tree.TreeNodeTools()
 root=tree.createTreeByrow([3,9,20,3,'null',15,7],0)
 print(levelOrder(root))
+
+#No.6  反转链表
+def reverseList(self, head) :
+    if not head:
+        return None
+    pre, cur = head, head.next
+    pre.next = None
+    while cur:
+        temp = cur.next
+        cur.next = pre
+        pre, cur = cur, temp
+    return pre
+
+#No.7  287 寻找重复数
+class Solution:
+
+    def findDuplicate(self, nums) :
+        size=len(nums)
+        left=1
+        right=size-1
+        while left<right:
+            mid=left+(right-left)//2
+            count=0
+            for i in range(size):
+                if nums[i]<=mid:
+                    count+=1
+            if count>mid:
+                right=mid
+            else:
+                left=mid+1
+        return left
 
 
 #打家劫舍III
