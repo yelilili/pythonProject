@@ -1,4 +1,5 @@
-#学长
+class List(object):
+pass#学长
 题目描述：
 有n个物品，他们有各自的体积和价值，现有给定容量的背包，如何让背包里装入的物品具有最大的价值总和?
 输入参数：N和W分别是物体的数量和背包能装的重量。wt数组是指物体的重量，val指的是对应的价值
@@ -262,3 +263,41 @@ def rob( nums):
 print(rob([1,2,3,1]))
 ```
 
+###达达：72 编辑距离 [达达题解](https://www.jianshu.com/p/02561842fedd)
+```python
+class Solution:
+    def minDistance(self, word1: str, word2: str) -> int:
+        #创建二维dp
+        m = len(word1)
+        n = len(word2)
+        dp = [[0]*(m+1) for _ in range(n+1)]
+        for i in range(n+1):
+            dp[i][0] = i
+        for j in range(m+1):
+            dp[0][j] = j
+        for i in range(1,n+1):
+            for j in range(1,m+1):
+                if word1[j-1]!=word2[i-1]:
+                    dp[i][j] = min(dp[i][j-1],dp[i-1][j],dp[i-1][j-1])+1
+                else:
+                    dp[i][j] = dp[i-1][j-1]
+        return dp[-1][-1]
+```
+###48 学长 旋转图像
+```python
+from typing import List#没有的话，下文参数中出现List会飘红
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        pos1,pos2=0,(len(matrix[0])-1)      
+        while pos1<pos2:
+            add=0
+            while add<pos2-pos1:    
+                temp=matrix[pos1][pos1+add]
+                matrix[pos1][pos1+add]=matrix[pos2-add][pos1]
+                matrix[pos2-add][pos1]=matrix[pos2][pos2-add]
+                matrix[pos2][pos2-add]=matrix[pos1+add][pos2]
+                matrix[pos1+add][pos2]=temp
+                add+=1
+            pos1+=1
+            pos2-=1
+```
